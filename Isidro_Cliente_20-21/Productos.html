@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<title></title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--<link rel="stylesheet" type="text/css" href="./Estilos/Ordenador.css">-->
+	<!--<link rel="stylesheet" type="text/css" href="./Estilos/Grid.css">-->
+	<!--<link rel="stylesheet" type="text/css" href="./Estilos/Movil.css">-->
+  <link rel="stylesheet" type="text/css" href="./Estilos/Productos.css">
+	<!--<link rel="stylesheet" type="text/css" href="./Estilos/Index.css">-->
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	
+	<style type="text/css">
+    	
+  	</style>
+  	
+</head>
+
+<body>
+	
+
+	<script type="text/javascript">
+
+		
+
+	</script>
+
+ <nav class="navbar navbar-inverse item0">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="Index.html"><img src="./Imagenes/logoGIF_supermercados.gif" class="logomovil"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="Productos.html">Productos<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="Producto_1.html">Corn flakes</a></li>
+            <li><a href="Producto_2.html">Torre de Núñez</a></li>
+            <li><a href="Producto_3.html">Eko ecológico</a></li>            
+          </ul>
+        </li>
+        <!--<li><a href="Productos.html">Productos</a></li>-->
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li><a href="Carrito.html">Carrito</a></li>
+        <li><a href="Registrarse.html">Registrarse</a></li>
+      </ul>
+      <!--<ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>-->
+    </div>
+  </div>
+</nav>
+
+
+    
+  	<div class="contenedor">
+  		<div class="item1"></div>
+  		<div class="item2"><a href="Index.html"></a><img src="./Imagenes/logoGIF_supermercados.gif" class="imagen_no"></div>
+  		<div class="item3"></div>
+  		<div class="item4">
+          <a href="Index.html">Inicio</a>
+          <a href="Productos.html">Productos</a>
+          <a href="Contacto.html">Contacto</a>
+          <a href="Carrito.html">Carrito</a>
+          <a href="Registrarse.html">Registrarse</a>
+
+      </div>
+  		<div class="item5">
+            <div class="item5_1"><a href="Producto_1.html"><img src="./Fotos alimentacion/Corn flakes de kellogs.jpg" style="margin-top:0px;"><br><p style="color:white;margin-top:0px;font-size:20px;">2,50 €</p><button id="crear" name="crear" style="color:orange;margin-top:-200px;font-size:20px;width:150px;">Corn flakes</button></a></div>
+            <div class="item5_2"><a href="Producto_2.html"><img src="./Fotos alimentacion/Torre de Núñez.jpg" style="margin-top:0px;"><br><p style="color:white;margin-top:0px;font-size:20px;">2,28 €</p><button id="crear_2" name="crear_2" style="color:orange;margin-top:-200px;font-size:20px;width:150px;">Torre de Núnez</button></a></div>
+            <div class="item5_3"><a href="Producto_3.html"><img src="./Fotos alimentacion/Eko.jpg" style="margin-top:0px;"><br><p style="color:white;margin-top:0px;font-size:20px;">2,41 €</p><button id="crear_3" name="crear_3" style="color:orange;margin-top:-200px;width:150px;font-size:20px;">Eko</button></a>
+            </div>
+            <div class="item5_4">
+            <form name="frmDatos" action="Carrito.html" method="get">
+            <label for="producto">Producto</label><textarea name="producto" class="producto" rows="2" cols="1">Eko</textarea><!--<input class="producto" type="textarea" maxlength="30" size="30" name="producto">-->
+            <label for="precio">Precio</label><textarea name="producto" class="precio" rows="2" cols="1">2,41 €</textarea><!--<input class="precio" type="textarea" size="30" maxlength="30" name="precio">-->
+            
+            <input type="button" class="crear" id="crear" name="crear" value="insertar">
+            <input type="button" class="mostrar" id="mostrar" name="mostrar" value="mostrar">
+            <!--<input class="enviar" type="submit" value="Enviar" />-->
+            </form>
+            <p id="resultado"></p>
+            </div>
+      </div>
+  		<div class="item6">6</div>
+  		<div class="item7">7</div>
+  		<div class="item8">8</div>
+  		<div class="item9">9</div>
+  		<div class="item10"><a href="http://www.facebook.com" target="_blank"><img src="./Iconos/Facebook.png" class="mini_facebook"></a></div>
+      <div class="item11"><a href="http://www.twitter.com" target="_blank"><img src="./Iconos/Pie_de_página.png" class="imagen"><img src="./Iconos/Twitter.jpg" class="mini_twitter"></a></div>
+      <div class="item12"><a href="http://www.instagram.com" target="_blank"><img src="./Iconos/Instagram.jpg" class="mini_instagram"></a></div>
+
+  		
+  	</div>
+
+  	<script src="Anhadir_carrito.js">
+
+
+    	
+  	</script>
+  		
+  	
+</body>
+		
+
+
+
+</html>
+
+
+
