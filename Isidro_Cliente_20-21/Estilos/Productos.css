@@ -89,11 +89,6 @@
 	width:200px;
 }
 
-.mostrar, .crear {
-	font-size: 20px;
-	color:orange;
-}
-
 /*.enviar {
 	width:150px;
 	height: 30px;
@@ -101,26 +96,8 @@
 	font-size: 20px;
 }*/
 
-label {
+/*label {
 	font-size: 20px;
-}
-
-.producto {
-	width:150px;
-	height: 50px;
-	font-size: 18px;
-	background-color: transparent;
-	color:white;
-	border:1px solid orange;
-}
-
-.precio {
-	width: 150px;
-	height: 50px;
-	font-size: 18px;
-	background-color: transparent;
-	color:white;
-	border:1px solid orange;
 }
 
 label {
@@ -132,7 +109,7 @@ label {
 input {
 	width:150px;
 	display: inline-block;
-}
+}*/
 
 button {
 	width:50px;
@@ -155,20 +132,20 @@ div.item5_2 {
 
 div.item5_1 img {
   //border:1px solid blue;
-  width:150px;
-  height:150px;
+  width:200px;
+  height:200px;
   //margin-top: 50px;
 }
 
 div.item5_2 img {
-  width:150px;
-  height:150px;
+  width:200px;
+  height:200px;
   margin-top: 10px;
 }  
 
 div.item5_3 img {
-  width:150px;
-  height:150px;
+  width:200px;
+  height:200px;
 }
 
 div.item10 img {

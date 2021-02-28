@@ -1,7 +1,5 @@
 
 
-
-
 @media screen and (min-width:601px) { 
 
 * {
@@ -85,9 +83,9 @@
     //background-color: red;
 }
 
-.item5_1, .item5_2, .item5_4 {
+/*.item5_1, .item5_2, .item5_4 {
 	border:10px solid black;
-}
+}*/
 
 .item6, .item7, .item8, .item9 {
     display: none;

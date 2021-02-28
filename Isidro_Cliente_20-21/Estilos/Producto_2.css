@@ -69,6 +69,10 @@ div.item5_1 p {
 	color:white;
 }
 
+div.item5_2 img p {
+  margin-top: 50px;
+}
+
 p b {
 	font-size: 1.6rem;
 	color:red;
@@ -108,9 +112,9 @@ p b {
     //background-color: red;
 }
 
-.item5_1, .item5_2, .item5_4 {
+/*.item5_1, .item5_2, .item5_4 {
 	border:10px solid black;
-}
+}*/
 
 .item6, .item7, .item8, .item9 {
     display: none;
