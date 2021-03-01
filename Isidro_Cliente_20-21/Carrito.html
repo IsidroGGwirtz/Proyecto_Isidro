@@ -81,7 +81,19 @@
           <a href="Registrarse.html">Registrarse</a>
 
       </div>
-      <div class="item5"></div>
+      <div class="item5">
+        
+        <form name="frmDatos">
+      <label for="nombre">Producto</label><input type="text" name="producto" value="un producto">
+      <label for="edad">Precio</label><input type="text" name="precio" value="1€">
+      
+      <input type="button" id="crear" name="crear" value="insertar nuevo producto">
+      <input type="button" id="mostrar" name="mostrar" value="mostrar listado productos">
+    </form>
+    <p id="resultado"></p>
+
+
+      </div>
       <div class="item6">6</div>
       <div class="item7">7</div>
       <div class="item8">8</div>
@@ -94,7 +106,44 @@
       
     </div>
 
-    <script type="text/javascript">
+    <script>
+
+      var listadoProductos = new Array();
+
+      function insertar() {
+        var nuevoProducto,precio,numCompr;
+        nuevoProducto = document.frmDatos.producto.value;
+        precio = document.frmDatos.precio.value;
+        numCompr = new Date();
+        var prod = new producto(nuevoProducto,precio);
+        prod.comprar(numCompr.getTime());
+        listadoProductos.push(prod);
+      }
+
+      function mostrarLista() {
+        //var alumnos;
+        document.getElementById("resultado").innerHTML = "Listado Productos: <br>";
+        for (var i=0;i<listadoProductos.length;i++) {
+          document.getElementById("resultado").innerHTML=document.getElementById("resultado").innerHTML+listadoProductos[i].datosProducto()+"</br>";
+        }
+      }
+    
+      document.getElementById("crear").addEventListener("click",function(){insertar();});
+      document.getElementById("mostrar").addEventListener("click",function(){mostrarLista();});
+
+      function producto(nombre,precio) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.numCompra=null;
+        this.comprar = function(numCompra) {
+          this.numCompra = numCompra;
+        };
+        this.datosProducto = function() {
+          return "nombre: "+this.nombre+", precio:"+this.precio+", registroCompra: "+ this.numCompra;
+        }
+
+      }
+
 
 
       
