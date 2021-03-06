@@ -72,7 +72,9 @@
     <div class="contenedor">
       <div class="item1"></div>
       <div class="item2"><a href="Index.html"><img src="./Imagenes/logoGIF_supermercados.gif" class="imagen_no"></a></div>
-      <div class="item3"></div>
+      <div class="item3">Eko:2,41€.<br>
+      Corn flakes:2,40€.<br>
+      Torre de Nuñez:22,80€.</div>
       <div class="item4">
           <a href="Index.html">Inicio</a>
           <a href="Productos.html">Productos</a>
@@ -81,16 +83,19 @@
           <a href="Registrarse.html">Registrarse</a>
 
       </div>
-      <div class="item5">
+      <div class="item5"><p class="no_movil">Eko:2,41€.<br>
+      Corn flakes:2,40€.<br>
+      Torre de Nuñez:22,80€.</p>
         
         <form name="frmDatos">
-      <label for="nombre">Producto</label><input type="text" name="producto" value="un producto">
-      <label for="edad">Precio</label><input type="text" name="precio" value="1€">
+      <label for="nombre">Producto</label><input class="color_input" type="text" name="producto" value="un producto">
+      <label class="posicion" for="edad">Precio</label><input class="color_input" type="text" name="precio" size="11" maxlength="11" value="€">
       
-      <input type="button" id="crear" name="crear" value="insertar nuevo producto">
-      <input type="button" id="mostrar" name="mostrar" value="mostrar listado productos">
+      <input type="button" class="color" id="crear" name="crear" value="insertar producto">
+      <input type="button" class="color" id="mostrar" name="mostrar" value="mostrar listado productos">
     </form>
     <p id="resultado"></p>
+    <p id="resultado_2"></p>
 
 
       </div>
@@ -139,7 +144,7 @@
           this.numCompra = numCompra;
         };
         this.datosProducto = function() {
-          return "nombre: "+this.nombre+", precio:"+this.precio+", registroCompra: "+ this.numCompra;
+          return "producto: "+this.nombre+", precio:"+this.precio+", registroCompra: "+ this.numCompra;
         }
 
       }
